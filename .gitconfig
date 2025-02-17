@@ -1,0 +1,15 @@
+[user]
+	name = Surasith
+	email = surasithpc@gmail.com
+[core]
+	excludesfile = /Users/surasith.kae/.gitignore_global
+	ignorecase = false
+[commit]
+	template = /Users/surasith.kae/.stCommitMsg
+[url "ssh://git@github.com/"]
+  	insteadOf = https://github.com/
+[alias]
+	fetch-f = !git fetch -p && git checkout master && git pull
+	clean-m = !git branch --merged | grep -v '\\*\\|master' | xargs -n 1 git branch -d
+	cleanup = !git fetch -p && git checkout master && git pull && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+	cu = !git fetch -p && git checkout master && git pull && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
