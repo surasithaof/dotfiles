@@ -10,11 +10,15 @@
   "icon_theme": "Material Icon Theme",
   "vim_mode": true,
   "features": {
-    "copilot": true,
-    // "inline_completion_provider": "supermaven"
     "edit_prediction_provider": "copilot"
   },
   "theme": "Vesper Custom",
-  // "ui_font_size": 14,
-  "buffer_font_size": 14
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "terminal": {
+    "font_size": 12,
+    "shell": {
+      "program": "zsh"
+    }
+  }
 }
