@@ -12,22 +12,31 @@
   },
   "base_keymap": "VSCode",
   "agent": {
+    "play_sound_when_agent_done": true,
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "claude-sonnet-4"
     },
     "model_parameters": []
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
   "vim_mode": true,
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "theme": "Vesper Custom",
-  "ui_font_size": 14,
+  "theme": {
+    "mode": "dark",
+    "light": "Vesper Custom",
+    "dark": "Vesper Custom"
+  },
+  "ui_font_size": 15,
   "buffer_font_size": 14,
   "terminal": {
-    "font_size": 12,
+    "font_size": 14,
     "shell": {
       "program": "zsh"
     }
