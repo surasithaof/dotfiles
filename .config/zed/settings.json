@@ -7,6 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "inlay_hints": {
+    "enabled": true
+  },
+  "base_keymap": "VSCode",
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "model_parameters": []
+  },
   "icon_theme": "Material Icon Theme",
   "vim_mode": true,
   "features": {
