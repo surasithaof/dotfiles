@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "inlay_hints": {
-    "enabled": true
+    "enabled": false
   },
   "base_keymap": "VSCode",
   "agent": {
