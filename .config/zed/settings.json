@@ -8,7 +8,14 @@
 // from the command palette or from `Zed` application menu.
 {
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+    "toggle_on_modifiers_press": null
   },
   "base_keymap": "VSCode",
   "agent": {
@@ -34,6 +41,8 @@
     "dark": "Vesper Custom"
   },
   "ui_font_size": 15,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_fallbacks": [".ZedMono"],
   "buffer_font_size": 14,
   "terminal": {
     "font_size": 14,
