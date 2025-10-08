@@ -9,7 +9,43 @@
 [url "ssh://git@github.com/"]
   	insteadOf = https://github.com/
 [alias]
+	# Common shortcuts
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	cm = commit -m
+	ca = commit --amend
+	cane = commit --amend --no-edit
+
+	# Branch operations
 	fetch-f = !git fetch -p && git checkout master && git pull
-	clean-m = !git branch --merged | grep -v '\\*\\|master' | xargs -n 1 git branch -d
+	clean-m = !git branch --merged | grep -v '\\*\\|master\\|main' | xargs -n 1 git branch -d
 	cleanup = !git fetch -p && git checkout master && git pull && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
-	cu = !git fetch -p && git checkout master && git pull && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+
+	# Logging
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ls = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+	last = log -1 HEAD --stat
+
+	# Diff
+	df = diff
+	dfs = diff --staged
+	dfc = diff --cached
+
+	# Stash
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+
+	# Undo
+	unstage = reset HEAD --
+	undo = reset --soft HEAD^
+
+	# Repository info
+	size = !git ls-tree -r -l HEAD | awk '{sum += $4} END {print sum, \"bytes\"}'
+	size-all = !du -h -d 1 | sort -hr
+
+	# Show contributors
+	contributors = shortlog -sn
