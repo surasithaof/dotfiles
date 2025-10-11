@@ -47,9 +47,9 @@
   "ui_font_size": 15,
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_fallbacks": [".ZedMono"],
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
   "terminal": {
-    "font_size": 14,
+    "font_size": 13,
     "shell": {
       "program": "zsh"
     }
