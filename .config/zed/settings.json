@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "mode": "eager"
+  },
   "inlay_hints": {
     "enabled": false,
     "show_type_hints": true,
@@ -19,6 +22,7 @@
   },
   "base_keymap": "VSCode",
   "agent": {
+    "always_allow_tool_actions": true,
     "play_sound_when_agent_done": true,
     "default_model": {
       "provider": "copilot_chat",
@@ -40,12 +44,12 @@
     "light": "Vesper Custom",
     "dark": "Vesper Custom"
   },
-  "ui_font_size": 14,
+  "ui_font_size": 15,
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_fallbacks": [".ZedMono"],
-  "buffer_font_size": 13,
+  "buffer_font_size": 14,
   "terminal": {
-    "font_size": 13,
+    "font_size": 14,
     "shell": {
       "program": "zsh"
     }
