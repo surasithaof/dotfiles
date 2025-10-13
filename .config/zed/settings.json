@@ -44,6 +44,7 @@
     "light": "Vesper Custom",
     "dark": "Vesper Custom"
   },
+  "format_on_save": "on",
   "ui_font_size": 15,
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_fallbacks": [".ZedMono"],
