@@ -64,7 +64,7 @@
     "statusBarItem.hoverForeground": "#FFF",
     "statusBarItem.remoteBackground": "#FFC799",
     "statusBarItem.remoteForeground": "#000",
-    "statusBarItem.remoteHoverForeground": "#000"
+    "statusBarItem.remoteHoverForeground": "#000",
   },
   "sonarlint.rules": {
     "javascript:S3800": {
@@ -108,7 +108,10 @@
   "editor.renderWhitespace": "all",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["g", "H"],
+      "before": [
+        "g",
+        "H"
+      ],
       "commands": [
         {
           "command": "editor.action.showDefinitionPreviewHover"
@@ -118,14 +121,24 @@
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["g", "I"],
-      "commands": ["editor.action.goToImplementation"]
+      "before": [
+        "g",
+        "I"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["g", "I"],
-      "commands": ["editor.action.goToImplementation"]
+      "before": [
+        "g",
+        "I"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
     }
   ],
   "workbench.iconTheme": "material-icon-theme",
@@ -155,7 +168,7 @@
   "redoclyOpenAPI.api.region": "us",
   "editor.fontFamily.backup": "Menlo, Monaco, 'Courier New', monospace",
   "editor.fontFamily": "JetBrains Mono, Monaco, 'Courier New', monospace",
-  "editor.inlayHints.fontSize": 13,
+  "editor.inlayHints.fontSize": 14,
   "redoclyOpenAPI.user.anonymousId": "a42b87e1-ceb8-4665-957e-08950f688fe4",
   "pgsql.serverGroups": [
     {
@@ -207,7 +220,9 @@
     "markdown": true,
     "scminput": false
   },
-  "editor.fontSize": 13,
-  "debug.console.fontSize": 13,
-  "terminal.integrated.fontSize": 13
+  "editor.fontSize": 14,
+  "debug.console.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "chat.editor.fontSize": 14,
+  "chat.fontSize": 14,
 }
