@@ -50,12 +50,12 @@
     "dark": "Vesper Custom"
   },
   "format_on_save": "on",
-  "ui_font_size": 15.0,
+  "ui_font_size": 14.0,
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_fallbacks": [".ZedMono"],
-  "buffer_font_size": 13.0,
+  "buffer_font_size": 12.5,
   "terminal": {
-    "font_size": 13.0,
+    "font_size": 12.5,
     "shell": {
       "program": "zsh"
     }
