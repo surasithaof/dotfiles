@@ -7,7 +7,7 @@
       "name": "Vesper Custom",
       "appearance": "dark",
       "style": {
-        "border": "#101010",
+        "border": "#404040",
         "border.variant": "#101010",
         "border.focused": "#FFC799",
         "border.selected": "#FFC799",
@@ -28,7 +28,7 @@
         "ghost_element.selected": "#232323",
         "ghost_element.disabled": null,
         "text": "#FFFFFF",
-        "text.muted": "#CACACA",
+        "text.muted": "#D7D7D7",
         "text.placeholder": "#7E7E7E",
         "text.disabled": "#7E7E7E",
         "text.accent": "#FFC799",
