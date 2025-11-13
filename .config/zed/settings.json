@@ -7,7 +7,10 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "ui_font_weight": 420.0,
+  "buffer_line_height": "comfortable",
+  "buffer_font_size": 13.0,
+  "buffer_font_family": "JetBrains Mono",
+  "ui_font_weight": 320.0,
   "ui_font_family": ".ZedSans",
   "agent_buffer_font_size": 14.0,
   "agent_ui_font_size": 14.0,
@@ -50,12 +53,12 @@
     "dark": "Vesper Custom"
   },
   "format_on_save": "on",
-  "ui_font_size": 14.0,
-  "buffer_font_family": "JetBrains Mono",
+  "ui_font_size": 15.5,
   "buffer_font_fallbacks": [".ZedMono"],
-  "buffer_font_size": 12.5,
   "terminal": {
-    "font_size": 12.5,
+    "font_family": "JetBrains Mono",
+    "font_weight": 420.0,
+    "font_size": 13.0,
     "shell": {
       "program": "zsh"
     }
