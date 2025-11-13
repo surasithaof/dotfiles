@@ -64,7 +64,7 @@
     "statusBarItem.hoverForeground": "#FFF",
     "statusBarItem.remoteBackground": "#FFC799",
     "statusBarItem.remoteForeground": "#000",
-    "statusBarItem.remoteHoverForeground": "#000",
+    "statusBarItem.remoteHoverForeground": "#000"
   },
   "sonarlint.rules": {
     "javascript:S3800": {
@@ -76,7 +76,7 @@
   },
   "go.toolsManagement.autoUpdate": true,
   "[sql]": {
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
   },
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
@@ -108,10 +108,7 @@
   "editor.renderWhitespace": "all",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "g",
-        "H"
-      ],
+      "before": ["g", "H"],
       "commands": [
         {
           "command": "editor.action.showDefinitionPreviewHover"
@@ -121,24 +118,14 @@
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "g",
-        "I"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
+      "before": ["g", "I"],
+      "commands": ["editor.action.goToImplementation"]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "g",
-        "I"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
+      "before": ["g", "I"],
+      "commands": ["editor.action.goToImplementation"]
     }
   ],
   "workbench.iconTheme": "material-icon-theme",
@@ -220,9 +207,9 @@
     "markdown": true,
     "scminput": false
   },
-  "editor.fontSize": 12,
-  "debug.console.fontSize": 12,
-  "terminal.integrated.fontSize": 12,
+  "debug.console.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
   "chat.editor.fontSize": 14,
   "chat.fontSize": 14,
+  "editor.fontSize": 13
 }
