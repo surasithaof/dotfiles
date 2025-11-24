@@ -62,7 +62,7 @@
         "editor.invisible": null,
         "editor.wrap_guide": null,
         "editor.active_wrap_guide": null,
-        "editor.document_highlight.read_background": "#282828",
+        "editor.document_highlight.read_background": "#585858",
         "editor.document_highlight.write_background": "#282828",
         "terminal.background": "#101010",
         "terminal.foreground": "#D7D7D7",
