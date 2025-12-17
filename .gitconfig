@@ -6,8 +6,8 @@
 	ignorecase = false
 [commit]
 	template = /Users/surasith.kae/.stCommitMsg
-[url "ssh://git@github.com/"]
-  	insteadOf = https://github.com/
+# [url "ssh://git@github.com/"]
+#   	insteadOf = https://github.com/
 [alias]
 	# Common shortcuts
 	st = status

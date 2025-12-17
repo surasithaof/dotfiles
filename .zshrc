@@ -1,3 +1,4 @@
+# Golang
 export PATH="$PATH:$HOME/go/bin"
 
 # show git branch in prompt
@@ -12,5 +13,11 @@ COLOR_GIT=$'%F{39}'
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
 
+# Local bin
 export PATH="$HOME/.local/bin:$PATH"
-eval "$(direnv hook zsh)"
+
+# Direnv
+# eval "$(direnv hook zsh)"
+
+# Flutter SDK
+export PATH=$HOME/flutter/bin:$PATH
