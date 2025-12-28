@@ -2,12 +2,14 @@
 	name = Surasith
 	email = surasithpc@gmail.com
 [core]
-	excludesfile = /Users/surasith.kae/.gitignore_global
+	excludesfile = /Users/surasith/.gitignore_global
 	ignorecase = false
 [commit]
-	template = /Users/surasith.kae/.stCommitMsg
+	template = /Users/surasith/.stCommitMsg
 # [url "ssh://git@github.com/"]
 #   	insteadOf = https://github.com/
+[push]
+	autoSetupRemote = true
 [alias]
     # Common shortcuts
 	st = status
