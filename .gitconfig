@@ -9,7 +9,7 @@
 # [url "ssh://git@github.com/"]
 #   	insteadOf = https://github.com/
 [alias]
-	# Common shortcuts
+    # Common shortcuts
 	st = status
 	co = checkout
 	br = branch
@@ -18,10 +18,21 @@
 	ca = commit --amend
 	cane = commit --amend --no-edit
 
+	# Push and pull
+	pb = push origin HEAD
+	pl = pull origin HEAD
+	pp = pull --rebase origin HEAD
+
 	# Branch operations
 	fetch-f = !git fetch -p && git checkout master && git pull
 	clean-m = !git branch --merged | grep -v '\\*\\|master\\|main' | xargs -n 1 git branch -d
 	cleanup = !git fetch -p && git checkout master && git pull && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+
+	# Remove files from history
+	rm-file = rm --cached $1
+	rm-dir = rm -r --cached $1
+	rm-hist = !git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch $1' HEAD
+	reset-rm-hist = !git reset --hard ORIG_HEAD
 
 	# Logging
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
