@@ -9,3 +9,5 @@
   conventions, env vars), update the relevant doc in the same change, not as a follow-up.
 - New env var / config value: add it to the project's example/template env file (`.env.example`
   or equivalent) in the same change, never as a follow-up.
+- Flat over nested: prefer guard clauses/early returns over deep if/else nesting. Extract a
+  helper when a block starts stacking conditionals instead of adding another level.
