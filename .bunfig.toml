@@ -1,0 +1,3 @@
+[install]
+cafile = "/etc/ssl/cert.pem"
+minimumReleaseAge = 604800
