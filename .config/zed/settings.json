@@ -7,6 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "buffer_line_height": "comfortable",
   "buffer_font_size": 13.0,
   "buffer_font_family": "JetBrains Mono",
@@ -16,6 +29,7 @@
   "agent_ui_font_size": 14.0,
   "buffer_font_weight": 420.0,
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "eager"
   },
   "inlay_hints": {
@@ -30,8 +44,11 @@
   },
   "base_keymap": "VSCode",
   "agent": {
-    "always_allow_tool_actions": true,
-    "play_sound_when_agent_done": true,
+    "tool_permissions": {
+      "default": "allow"
+    },
+    "dock": "right",
+    "play_sound_when_agent_done": "always",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4"
@@ -39,20 +56,30 @@
     "model_parameters": []
   },
   "icon_theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "Material Icon Theme",
     "dark": "Material Icon Theme"
   },
   "vim_mode": true,
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
   "theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "Vesper Custom",
     "dark": "Vesper Custom"
   },
   "format_on_save": "on",
+  "languages": {
+    "Go": {
+      "formatter": [
+        {
+          "external": {
+            "command": "/Users/surasith/go/bin/formattag",
+            "arguments": ["-file", "/dev/stdin", "-C"]
+          }
+        },
+        "language_server"
+      ]
+    }
+  },
   "ui_font_size": 15.5,
   "buffer_font_fallbacks": [".ZedMono"],
   "terminal": {
