@@ -72,12 +72,42 @@
       "formatter": [
         {
           "external": {
-            "command": "/Users/surasith/go/bin/formattag",
+            "command": "formattag",
             "arguments": ["-file", "/dev/stdin", "-C"]
           }
         },
         "language_server"
       ]
+    }
+  },
+  "lsp": {
+    "gopls": {
+      "binary": {
+        "env": {
+          "GOTOOLCHAIN": "auto"
+        }
+      }
+    }
+  },
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "remote": false,
+      "settings": {}
+    },
+    "redpanda": {
+      "enabled": true,
+      "url": "https://docs.redpanda.com/mcp",
+      "settings": {}
+    },
+    "mcp-server-github": {
+      "enabled": true,
+      "remote": false,
+      "settings": {}
+    },
+    "postgres-context-server": {
+      "enabled": true,
+      "settings": {}
     }
   },
   "ui_font_size": 15.5,

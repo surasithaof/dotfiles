@@ -2,6 +2,13 @@
 
 - Settings for Zed editor. See more [here](https://zed.dev/docs/configuring-zed).
 - Theme edite from [here](https://zed-themes.com/themes/edit/).
+- Go: on save, [formattag](https://github.com/momaek/formattag) aligns struct tag keys, then gopls formats. Install it and make sure `~/go/bin` is in `PATH`:
+
+  ```bash
+  go install github.com/momaek/formattag@latest
+  ```
+
+- MCP servers (`context_servers`) are committed without secrets. GitHub logs in via browser on first tool call (again after each Zed restart); Context7 runs keyless with lower rate limits. Never commit tokens here — check `git diff` if Zed writes them back.
 
 # Direnv configs
 
