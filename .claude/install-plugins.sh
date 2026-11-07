@@ -22,6 +22,7 @@ plugins=(
   "figma@claude-plugins-official"
   "claude-md-management@claude-plugins-official"
   "vercel@claude-plugins-official"
+  "postman@claude-plugins-official"
   "swift-lsp@claude-plugins-official"
   "caveman@caveman"
   "andrej-karpathy-skills@karpathy-skills"
